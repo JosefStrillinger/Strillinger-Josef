@@ -19,8 +19,7 @@ public class iterativeAndBinary {
             if (input[middle] < searchNumber) {
                  first = middle + 1;   
                  steps++;           
-            } else if (input[middle] == searchNumber) {
-               
+            } else if (input[middle] == searchNumber) {      
                 System.out.println("Number "+searchNumber+" found at location "+middle+" in "+steps+" steps");
                break;
             } else {
