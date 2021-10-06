@@ -1,12 +1,33 @@
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
+import java.util.stream.IntStream;
+
+import javax.swing.Renderer;
 
 public class iterativeUndBinarySearch {
     public static void main(String[] args) throws Exception {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bitte geben Sie die Länge das Arrays ein: ");
+        int r = input.nextInt();
+        input.close(); 
+        int[] arr = new int[r];
+        createRandomArray(arr);
+        //arr = IntStream.range(1, 100).toArray();
         Arrays.sort(arr);
-        binarySearch(arr, 12);
-        iterativeSearch(arr, 12);
+        Random randomN = new Random();
+        int randomNHelp = randomN.nextInt(arr.length-1);
+        int randomNumber = arr[randomNHelp];
+        binarySearch(arr, randomNumber);
+        iterativeSearch(arr, randomNumber);
+        
+    }
+
+    static void createRandomArray(int helpArr[]) {
+        Random random = new Random();
+        for (int i = 0; i < helpArr.length; i++) {
+            helpArr[i] = random.nextInt(10000) + 1;
+        }
     }
 
     public static void binarySearch(int[] input, int searchNumber) {
@@ -20,8 +41,8 @@ public class iterativeUndBinarySearch {
                  first = middle + 1;   
                  steps++;           
             } else if (input[middle] == searchNumber) {
-               
-                System.out.println("Number "+searchNumber+" found at location "+middle+" in "+steps+" steps");
+               steps++;
+                System.out.println("Binär: Die Nummer "+searchNumber+" wurde beim Index "+middle+" in "+steps+" Durchlaeufen gefunden.");
                break;
             } else {
                last = middle - 1;
@@ -32,7 +53,7 @@ public class iterativeUndBinarySearch {
        }
      if (first > last) {
      System.out.println(searchNumber 
-     + " is not present in the list.\n");
+     + " wurde nicht in der Liste gefunden.\n");
         }
      }
 
@@ -40,7 +61,7 @@ public class iterativeUndBinarySearch {
         int steps = 0;
         for(int i = 0; i < input.length; i++){
             if(input[i] == searchNumber){
-                System.out.println("Number "+searchNumber+" found at lovation "+i+" in "+steps+" steps.");
+                System.out.println("Iterativ: Die Nummer "+searchNumber+" wurde beim Index "+i+" in "+steps+" Durchlauefen gefunden.");
             }
             else{
                 steps++;
