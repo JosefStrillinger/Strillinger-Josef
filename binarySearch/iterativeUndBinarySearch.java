@@ -26,7 +26,7 @@ public class iterativeUndBinarySearch {
     static void createRandomArray(int helpArr[]) {
         Random random = new Random();
         for (int i = 0; i < helpArr.length; i++) {
-            helpArr[i] = random.nextInt(10000) + 1;
+            helpArr[i] = random.nextInt(100000) + 1;
         }
     }
 
