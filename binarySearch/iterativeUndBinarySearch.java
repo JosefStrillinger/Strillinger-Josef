@@ -61,6 +61,7 @@ public class iterativeUndBinarySearch {
         int steps = 0;
         for(int i = 0; i < input.length; i++){
             if(input[i] == searchNumber){
+                steps++;
                 System.out.println("Iterativ: Die Nummer "+searchNumber+" wurde beim Index "+i+" in "+steps+" Durchlauefen gefunden.");
             }
             else{
