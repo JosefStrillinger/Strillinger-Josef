@@ -6,8 +6,8 @@
 	],
 	"settings": {
 		"java.project.sourcePaths": [
-			"test_binary_search_30.09-21",
-			"binarySearch"
+			"binarySearch",
+			"sumFunction"
 		]
 	}
 }
