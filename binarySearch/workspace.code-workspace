@@ -7,7 +7,8 @@
 	"settings": {
 		"java.project.sourcePaths": [
 			"binarySearch",
-			"sumFunction"
+			"sumFunction",
+			"exponentialFunction"
 		]
 	}
 }

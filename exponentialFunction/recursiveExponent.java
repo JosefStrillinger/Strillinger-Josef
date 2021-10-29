@@ -19,7 +19,7 @@ public static int recursiveExpo(int helpBase, int helpExpo){
     if (helpExpo==0){ 
         return 1; 
     }else {  
-        helpBase *= recursive(helpBase, helpExpo-1); 
+        helpBase *= recursiveExpo(helpBase, helpExpo-1); 
     }
     return helpBase;
 }
