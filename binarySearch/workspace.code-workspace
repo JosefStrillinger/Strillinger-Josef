@@ -8,7 +8,8 @@
 		"java.project.sourcePaths": [
 			"binarySearch",
 			"sumFunction",
-			"exponentialFunction"
+			"exponentialFunction",
+			"recursiveProdukt"
 		]
 	}
 }
