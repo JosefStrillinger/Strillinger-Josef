@@ -13,7 +13,7 @@ public class recursiveProdukt {
         }      
     public static int recursiveProd(int helpNum){
         if (helpNum != 0) {
-            return helpNum * recursiveSum(helpNum - 1);
+            return helpNum * recursiveProd(helpNum - 1);
         }else {
             return helpNum;
         }
