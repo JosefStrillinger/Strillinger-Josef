@@ -17,5 +17,6 @@ public class recursiveProdukt {
         }else {
             return helpNum;
         }
-    }   
+    }  
+} 
 }
