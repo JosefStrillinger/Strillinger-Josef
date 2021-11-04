@@ -12,6 +12,9 @@ public class iterativeAndRecursiveSumme {
         int rSum = recursiveSum(r);
         System.out.println("Rekursive Summe");
         System.out.println("Die Summe ist: "+rSum+"");
+        int rProd = recursiveProd(r);
+        System.out.println("Rekursive Produkt");
+        System.out.println("Das Prosukt ist: "+rProd+"");
     }
 
 public static int iterativeSum(int helpNum){
@@ -21,10 +24,16 @@ public static int iterativeSum(int helpNum){
     }
     return sum;
 }
-
 public static int recursiveSum(int helpNum){
 	if (helpNum != 0) {
         return helpNum + recursiveSum(helpNum - 1);
+    }else {
+        return helpNum;
+    }
+}
+public static int recursiveProd(int helpNum){
+	if (helpNum != 0) {
+        return helpNum * recursiveSum(helpNum - 1);
     }else {
         return helpNum;
     }
