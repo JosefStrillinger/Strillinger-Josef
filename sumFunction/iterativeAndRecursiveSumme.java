@@ -1,8 +1,8 @@
 import java.util.Scanner;
+import java.sql.Date;
 import java.util.Calendar;
 
 public class iterativeAndRecursiveSumme {
-    static Calendar calendar = Calendar.getInstance();
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         System.out.print("Bitte geben Sie die gewünschte Summe ein: ");
@@ -20,16 +20,19 @@ public class iterativeAndRecursiveSumme {
     }
 
 public static int iterativeSum(int helpNum){
+    Calendar calendar = Calendar.getInstance();
     long time1 = calendar.getTimeInMillis();
     int sum = 0;
     for(int i = 0; i < helpNum+1; i++){
         sum += i;
     }
     long time2 = calendar.getTimeInMillis();
+    
     timeDiff(time1, time2);
     return sum;
 }
 public static int recursiveSum(int helpNum){
+    Calendar calendar = Calendar.getInstance();
     long time1 = calendar.getTimeInMillis();
 	if (helpNum != 0) {
         return helpNum + recursiveSum(helpNum - 1);
@@ -41,15 +44,18 @@ public static int recursiveSum(int helpNum){
 }
 public static int endRecursiveSum(int helpNum){
     return addSum(0, helpNum);
+
 }
 public static int addSum(int m, int n){
+    Calendar calendar = Calendar.getInstance();
     long time1 = calendar.getTimeInMillis();
-    if(n == 0){
+    int comp = 0;
+    if(n==comp){
         return m;
     }
     long time2 = calendar.getTimeInMillis();
     timeDiff(time1, time2);
-    return addSum(m+1, n-1);
+    return addSum(m+n, n-1);
 }
 public static void timeDiff(long t1, long t2){
     long tdiff = t2-t1;
