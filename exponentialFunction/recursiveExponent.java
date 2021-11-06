@@ -34,6 +34,6 @@ public static int erExpoHelp(int hb, int he){
     if(he==0){
         return 1;
     }
-    return erExpoHelp(hb, he-1);
+    return hb *= erExpoHelp(hb, he-1);
 }
 }
