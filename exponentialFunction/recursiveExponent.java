@@ -9,13 +9,22 @@ public class recursiveExponent {
         int e = input.nextInt();
         input.close(); 
         
+        long time1;
+        long time2;
+
+        time1 = System.nanoTime();
         int expon = recursiveExpo(b, e);
+        time2 = System.nanoTime();
         System.out.println("Rekursiver Exponent");
         System.out.println("Die Summe ist: "+expon+"");
+        timeDiff(time1, time2);
 
+        time1 = System.nanoTime();
         int expon2 = endRecursiveExpo(b, e);
+        time2 = System.nanoTime();
         System.out.println("Endrekursiver Exponent");
         System.out.println("Die Summe ist: "+expon2+"");
+        timeDiff(time1, time2);
     }
 
 
@@ -35,5 +44,9 @@ public static int erExpoHelp(int hb, int he){
         return 1;
     }
     return hb *= erExpoHelp(hb, he-1);
+}
+public static void timeDiff(long t1, long t2){
+    long tdiff = t2-t1;
+    System.out.println("Benötigte Zeit: "+tdiff/1000+"ms");
 }
 }
