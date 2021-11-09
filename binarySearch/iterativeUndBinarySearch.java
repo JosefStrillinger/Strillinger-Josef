@@ -1,9 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.IntStream;
-
-import javax.swing.Renderer;
 
 public class iterativeUndBinarySearch {
     public static void main(String[] args) throws Exception {
