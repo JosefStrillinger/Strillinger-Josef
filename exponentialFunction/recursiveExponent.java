@@ -13,14 +13,14 @@ public class recursiveExponent {
         long time2;
 
         time1 = System.nanoTime();
-        int expon = recursiveExpo(b, e);
+        long expon = recursiveExpo(b, e);
         time2 = System.nanoTime();
         System.out.println("Rekursiver Exponent");
         System.out.println("Die Summe ist: "+expon+"");
         timeDiff(time1, time2);
 
         time1 = System.nanoTime();
-        int expon2 = endRecursiveExpo(b, e);
+        long expon2 = endRecursiveExpo(b, e);
         time2 = System.nanoTime();
         System.out.println("Endrekursiver Exponent");
         System.out.println("Die Summe ist: "+expon2+"");
@@ -28,7 +28,7 @@ public class recursiveExponent {
     }
 
 
-public static int recursiveExpo(int helpBase, int helpExpo){	
+public static long recursiveExpo(int helpBase, int helpExpo){	
     if (helpExpo==0){ 
         return 1; 
     }else {  
@@ -36,10 +36,10 @@ public static int recursiveExpo(int helpBase, int helpExpo){
     }
     return helpBase;
 }
-public static int endRecursiveExpo(int helpBase, int helpExpo){
+public static long endRecursiveExpo(int helpBase, int helpExpo){
     return erExpoHelp(helpBase, helpExpo);
 }
-public static int erExpoHelp(int hb, int he){
+public static long erExpoHelp(int hb, int he){
     if(he==0){
         return 1;
     }
