@@ -28,7 +28,7 @@ public class recursiveExponent {
     }
 
 
-public static long recursiveExpo(int helpBase, int helpExpo){	
+public static long recursiveExpo(long helpBase, long helpExpo){	
     if (helpExpo==0){ 
         return 1; 
     }else {  
@@ -36,10 +36,10 @@ public static long recursiveExpo(int helpBase, int helpExpo){
     }
     return helpBase;
 }
-public static long endRecursiveExpo(int helpBase, int helpExpo){
+public static long endRecursiveExpo(long helpBase, long helpExpo){
     return erExpoHelp(helpBase, helpExpo);
 }
-public static long erExpoHelp(int hb, int he){
+public static long erExpoHelp(long hb, long he){
     if(he==0){
         return 1;
     }
