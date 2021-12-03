@@ -9,7 +9,8 @@
 			"binarySearch",
 			"sumFunction",
 			"exponentialFunction",
-			"recursiveProdukt"
+			"recursiveProdukt",
+			"bubblesort"
 		]
 	}
 }

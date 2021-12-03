@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Bubblesort {
     
     private boolean run = true;
@@ -23,9 +25,7 @@ public class Bubblesort {
         }
     }
 
-    boolean run = true;
-
-    void bubblesort(int helpArr[]){
+    private void bubblesort(int helpArr[]){
         
         for (int i = 0; i < helpArr.length && run == true; i++) {
             run = false;
