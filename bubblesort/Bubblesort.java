@@ -14,6 +14,7 @@ public class Bubblesort {
         //arr = IntStream.range(1, 100).toArray();
        System.out.println("Ungeordnet:");
        display(arr);
+       System.out.println("-------------------------------------------------------------");
        System.out.println("Geordnet:");
        bubblesort(arr);
        display(arr);
@@ -29,7 +30,9 @@ public class Bubblesort {
     }
 
     private static void bubblesort(int helpArr[]){
-        
+        long time1 = System.nanoTime();
+        long time2;
+
         boolean run = true;
         int smaller;
         int bigger;
@@ -47,6 +50,8 @@ public class Bubblesort {
                 }
             }
         }
+        time2 = System.nanoTime();
+        System.out.println("Zeit: "+(time2-time1)/1000+" ms");
 
     }
 
