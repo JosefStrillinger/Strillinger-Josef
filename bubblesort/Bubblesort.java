@@ -1,10 +1,8 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Bubblesort {
     
-    private boolean run = true;
-    private int smaller;
-    private int bigger;
 
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
@@ -14,7 +12,11 @@ public class Bubblesort {
         int[] arr = new int[r];
         createRandomArray(arr);
         //arr = IntStream.range(1, 100).toArray();
-       
+       System.out.println("Ungeordnet:");
+       display(arr);
+       bubblesort(arr);
+       display(arr);
+
         
     }
 
@@ -25,8 +27,12 @@ public class Bubblesort {
         }
     }
 
-    private void bubblesort(int helpArr[]){
+    private static void bubblesort(int helpArr[]){
         
+        boolean run = true;
+        int smaller;
+        int bigger;
+
         for (int i = 0; i < helpArr.length && run == true; i++) {
             run = false;
         
@@ -39,6 +45,13 @@ public class Bubblesort {
                     run = true;
                 }
             }
+        }
+
+    }
+
+    static void display(int helpArr[]){
+        for(int i = 0; i < helpArr.length; i++){
+            System.out.println(helpArr[i]);
         }
     }
 
