@@ -14,6 +14,7 @@ public class Bubblesort {
         //arr = IntStream.range(1, 100).toArray();
        System.out.println("Ungeordnet:");
        display(arr);
+       System.out.println("Geordnet:");
        bubblesort(arr);
        display(arr);
 
