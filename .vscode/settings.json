@@ -1,6 +1,10 @@
 {
     "java.project.sourcePaths": [
-        "binarySearch",
-        "bubblesort"
+        "factory_pattern",
+        "observer_pattern",
+        "proxy_pattern",
+        "strategy_pattern",
+        "bubblesort",
+        "binarySearch"
     ]
 }

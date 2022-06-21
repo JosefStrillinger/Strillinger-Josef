@@ -10,7 +10,11 @@
 			"sumFunction",
 			"exponentialFunction",
 			"recursiveProdukt",
-			"bubblesort"
+			"bubblesort",
+			"factory_pattern",
+			"observer_pattern",
+			"proxy_pattern",
+			"strategy_pattern"
 		]
 	}
 }
