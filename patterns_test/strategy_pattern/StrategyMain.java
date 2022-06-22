@@ -1,4 +1,4 @@
-public class Main {
+public class StrategyMain {
 
     public static void main(String[] args) {
         Husky husky = new Husky();

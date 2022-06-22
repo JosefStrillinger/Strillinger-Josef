@@ -5,6 +5,13 @@
         "proxy_pattern",
         "strategy_pattern",
         "bubblesort",
-        "binarySearch"
+        "binarySearch",
+        "patterns_test",
+        "patterns_test\\factory_pattern",
+        "patterns_test\\observer_pattern",
+        "patterns_test\\proxy_pattern",
+        "patterns_test\\strategy_pattern",
+        "patterns_uebung\\factory_uebung",
+        "patterns_uebung\\observer_uebung"
     ]
 }

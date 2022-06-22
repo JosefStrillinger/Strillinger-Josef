@@ -12,8 +12,8 @@ public class Factory {
 
     }
 
-    enum Autos {
-        Audi, VW
-    }
+}
 
+enum Autos {
+    Audi, VW
 }

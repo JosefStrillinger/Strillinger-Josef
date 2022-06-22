@@ -1,4 +1,4 @@
-public class Main {
+public class ObserverMain {
     public static void main(String[] args) {
         TTVerlag verlag = new TTVerlag();
         Knut knut = new Knut();

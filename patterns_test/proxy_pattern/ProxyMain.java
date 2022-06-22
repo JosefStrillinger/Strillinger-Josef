@@ -1,4 +1,4 @@
-public class Main {
+public class ProxyMain {
     public static void main(String[] args) {
         Internet internet = new ProxyInternet();
         try {
