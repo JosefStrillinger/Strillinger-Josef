@@ -8,6 +8,7 @@ class Knut implements Abonnent {
     public void erhalteZeitung(Zeitung zeitung) {
         System.out.println("Knut hat Zeitung " + zeitung.getTitel() + " erhalten.");
     }
+
 }
 
 class Kuma implements Abonnent {
@@ -16,4 +17,5 @@ class Kuma implements Abonnent {
     public void erhalteZeitung(Zeitung zeitung) {
         System.out.println("Kuma hat Zeitung " + zeitung.getTitel() + " erhalten.");
     }
+
 }
