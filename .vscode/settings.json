@@ -12,6 +12,8 @@
         "patterns_test\\proxy_pattern",
         "patterns_test\\strategy_pattern",
         "patterns_uebung\\factory_uebung",
-        "patterns_uebung\\observer_uebung"
+        "patterns_uebung\\observer_uebung",
+        "patterns_uebung\\proxy_uebung",
+        "patterns_uebung\\strategy_uebung"
     ]
 }

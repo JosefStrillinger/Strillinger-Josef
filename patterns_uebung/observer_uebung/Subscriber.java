@@ -6,6 +6,6 @@ class Fabi implements Subscriber {
 
     @Override
     public void erhalteNewsletter(Newsletter newsletter) {
-        System.out.println("Fabi hat Newsletter" + newsletter + "erhalten");
+        System.out.println("Fabi hat Newsletter " + newsletter.getNLTitle() + " erhalten");
     }
 }
