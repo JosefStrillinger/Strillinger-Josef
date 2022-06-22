@@ -14,6 +14,10 @@
         "patterns_uebung\\factory_uebung",
         "patterns_uebung\\observer_uebung",
         "patterns_uebung\\proxy_uebung",
-        "patterns_uebung\\strategy_uebung"
+        "patterns_uebung\\strategy_uebung",
+        "patterns_uebung_2\\factory_uebung_2",
+        "patterns_uebung_2\\observer_uebung_2",
+        "patterns_uebung_2\\proxy_uebung_2",
+        "patterns_uebung_2\\strategy_uebung_2"
     ]
 }
