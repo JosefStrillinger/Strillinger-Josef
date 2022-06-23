@@ -5,7 +5,7 @@ public class ProxyMain {
             internet.connectTo("google.at");
             internet.connectTo("google.com");
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
     }
 }
